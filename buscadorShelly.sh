@@ -1,8 +1,8 @@
 #!/bin/sh
 
 Buscar(){
-    # xSalidaNmap=$(sudo nmap -p 80 --open --script=http-title 192.168.3.0/24)
-    # echo "$xSalidaNmap" > Temporal.txt
+    xSalidaNmap=$(sudo nmap -p 80 --open --script=http-title 192.168.3.0/24)
+    echo "$xSalidaNmap" > Temporal.txt
 
     mNombre=""
     mIp=""
