@@ -1,7 +1,11 @@
 #!/bin/sh
+mRangoIP=""
 
 Buscar(){
-    xSalidaNmap=$(sudo nmap -p 80 --open --script=http-title 192.168.3.0/24)
+
+    echo $mRangoIP
+
+    xSalidaNmap=$(sudo nmap -p 80 --open --script=http-title $mRangoIP)
     echo "$xSalidaNmap" > Temporal.txt
 
     mNombre=""
@@ -49,4 +53,7 @@ Buscar(){
     done < "Temporal.txt"
 }
 
+mRangoIP=$1
+
 Buscar
+
