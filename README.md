@@ -1,0 +1,1 @@
+Título: Shelly Scanner Script Este script automatiza la detección de dispositivos Shelly dentro de un rango de red local. Utiliza nmap para identificar equipos con el puerto 80 abierto, extrae el modelo (vía HTTP title), la dirección IP y la dirección MAC, entregando un reporte limpio y organizado en consola.
